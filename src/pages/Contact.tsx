@@ -91,7 +91,7 @@ const Contact = () => {
                   <Github size={24} />
                 </a>
                 <a
-                  href="www.linkedin.com/in/rohit-praveen-nair"
+                  href="https://www.linkedin.com/in/rohit-praveen-nair"
                   target="_blank"
                   rel="noopener noreferrer"
                   className="p-4 bg-secondary border border-border hover:border-primary/50 transition-colors"
