@@ -21,7 +21,7 @@ const Navbar = () => {
       <div className="max-w-7xl mx-auto px-6 py-4">
         <div className="flex items-center justify-between">
           <Link to="/" className="text-xl font-semibold text-gradient">
-            RPN
+            My Portfolio
           </Link>
 
           {/* Desktop Nav */}
