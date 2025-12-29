@@ -2,7 +2,7 @@ import { useState } from "react";
 import { Mail, Phone, MapPin, Github, Linkedin, Send, Loader2 } from "lucide-react";
 import { toast } from "sonner";
 
-const WEB3FORMS_ACCESS_KEY = "YOUR_ACCESS_KEY_HERE"; // Replace with your Web3Forms access key
+const WEB3FORMS_ACCESS_KEY = "3ebcba1f-a188-4be5-bcf0-717e2c37e5a0";
 
 const Contact = () => {
   const [formData, setFormData] = useState({
