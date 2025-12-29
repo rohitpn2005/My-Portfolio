@@ -1,5 +1,5 @@
 import { GraduationCap, Award, Heart } from 'lucide-react';
-import aboutMeImage from '@/assets/about-me.jpeg';
+import aboutMeImage from '@/assets/about-me-2.jpeg';
 
 const education = [
   {
@@ -58,8 +58,15 @@ const About = () => {
   return (
     <section className="min-h-screen pt-24 pb-20 px-6">
       <div className="max-w-5xl mx-auto space-y-16">
-        {/* Header */}
-        <div className="text-center space-y-4 opacity-0 animate-fade-in-up">
+        {/* Header with Image */}
+        <div className="text-center space-y-6 opacity-0 animate-fade-in-up">
+          <div className="w-40 h-40 md:w-48 md:h-48 mx-auto rounded-full overflow-hidden border-2 border-primary/30">
+            <img 
+              src={aboutMeImage} 
+              alt="Rohit Praveen Nair" 
+              className="w-full h-full object-cover"
+            />
+          </div>
           <h1 className="text-4xl md:text-5xl font-bold">
             About <span className="text-gradient">Me</span>
           </h1>
@@ -68,24 +75,15 @@ const About = () => {
           </p>
         </div>
 
-        {/* Summary with Image */}
+        {/* Summary */}
         <div className="glass p-8 opacity-0 animate-fade-in-up animation-delay-200">
-          <div className="flex flex-col md:flex-row gap-8 items-center">
-            <div className="w-48 h-48 md:w-56 md:h-56 flex-shrink-0 rounded-full overflow-hidden border-2 border-primary/30">
-              <img 
-                src={aboutMeImage} 
-                alt="Rohit Praveen Nair" 
-                className="w-full h-full object-cover"
-              />
-            </div>
-            <p className="text-lg leading-relaxed text-muted-foreground">
-              Passionate AI and Data Science student with a strong foundation in Machine Learning, 
-              Deep Learning, and Software Engineering. Skilled in Python, Java, and web technologies, 
-              with hands-on experience in intelligent systems, data analysis, and user-focused projects. 
-              Actively involved in academic and collaborative research, with IEEE/IMPeC publications, 
-              hackathon achievements, and team leadership experience.
-            </p>
-          </div>
+          <p className="text-lg leading-relaxed text-muted-foreground">
+            Passionate AI and Data Science student with a strong foundation in Machine Learning, 
+            Deep Learning, and Software Engineering. Skilled in Python, Java, and web technologies, 
+            with hands-on experience in intelligent systems, data analysis, and user-focused projects. 
+            Actively involved in academic and collaborative research, with IEEE/IMPeC publications, 
+            hackathon achievements, and team leadership experience.
+          </p>
         </div>
 
         {/* Education */}
