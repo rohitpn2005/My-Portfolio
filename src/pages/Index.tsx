@@ -31,11 +31,13 @@ const Index = () => {
               <ArrowRight size={18} />
             </Link>
             <a
-              href="#"
+              href="https://drive.google.com/file/d/1PQUCq8WOmsecFqb1uHBibKxie1xQx2V2/view?usp=sharing"
+              target="_blank"
+              rel="noopener noreferrer"
               className="inline-flex items-center gap-2 px-6 py-3 glass text-foreground font-medium hover:bg-secondary/50 transition-colors"
             >
               <Download size={18} />
-              Resume
+              View Resume
             </a>
           </div>
 
