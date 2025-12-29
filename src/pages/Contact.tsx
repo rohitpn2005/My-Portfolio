@@ -1,24 +1,22 @@
-import { useState } from 'react';
-import { Mail, Phone, MapPin, Github, Linkedin, Send } from 'lucide-react';
-import { toast } from 'sonner';
+import { useState } from "react";
+import { Mail, Phone, MapPin, Github, Linkedin, Send } from "lucide-react";
+import { toast } from "sonner";
 
 const Contact = () => {
   const [formData, setFormData] = useState({
-    name: '',
-    email: '',
-    subject: '',
-    message: '',
+    name: "",
+    email: "",
+    subject: "",
+    message: "",
   });
 
   const handleSubmit = (e: React.FormEvent) => {
     e.preventDefault();
-    toast.success('Message sent successfully! I will get back to you soon.');
-    setFormData({ name: '', email: '', subject: '', message: '' });
+    toast.success("Message sent successfully! I will get back to you soon.");
+    setFormData({ name: "", email: "", subject: "", message: "" });
   };
 
-  const handleChange = (
-    e: React.ChangeEvent<HTMLInputElement | HTMLTextAreaElement>
-  ) => {
+  const handleChange = (e: React.ChangeEvent<HTMLInputElement | HTMLTextAreaElement>) => {
     setFormData({ ...formData, [e.target.name]: e.target.value });
   };
 
@@ -40,7 +38,7 @@ const Contact = () => {
           <div className="space-y-8 opacity-0 animate-fade-in-up animation-delay-200">
             <div className="glass p-6 space-y-6">
               <h2 className="text-xl font-semibold">Contact Information</h2>
-              
+
               <div className="space-y-4">
                 <a
                   href="mailto:rohitpnair7@gmail.com"
@@ -93,7 +91,7 @@ const Contact = () => {
                   <Github size={24} />
                 </a>
                 <a
-                  href="https://linkedin.com"
+                  href="www.linkedin.com/in/rohit-praveen-nair"
                   target="_blank"
                   rel="noopener noreferrer"
                   className="p-4 bg-secondary border border-border hover:border-primary/50 transition-colors"
