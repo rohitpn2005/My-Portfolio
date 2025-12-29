@@ -102,32 +102,6 @@ const Skills = () => {
           </div>
         </div>
 
-        {/* Skill Visualization */}
-        <div className="glass p-8 opacity-0 animate-fade-in-up">
-          <h2 className="text-xl font-semibold mb-6 text-center">Proficiency</h2>
-          <div className="space-y-4">
-            {[
-              { name: 'Python', level: 90 },
-              { name: 'Machine Learning', level: 85 },
-              { name: 'Deep Learning', level: 80 },
-              { name: 'Web Development', level: 75 },
-              { name: 'Data Analysis', level: 85 },
-            ].map((skill, index) => (
-              <div key={index} className="space-y-2">
-                <div className="flex justify-between text-sm">
-                  <span>{skill.name}</span>
-                  <span className="text-muted-foreground">{skill.level}%</span>
-                </div>
-                <div className="h-2 bg-secondary overflow-hidden">
-                  <div
-                    className="h-full bg-gradient-to-r from-primary to-accent transition-all duration-1000"
-                    style={{ width: `${skill.level}%` }}
-                  />
-                </div>
-              </div>
-            ))}
-          </div>
-        </div>
       </div>
     </section>
   );
