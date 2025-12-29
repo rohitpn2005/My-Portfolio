@@ -83,7 +83,7 @@ const Contact = () => {
               <h2 className="text-xl font-semibold mb-4">Connect With Me</h2>
               <div className="flex gap-4">
                 <a
-                  href="https://github.com"
+                  href="https://github.com/rohitpn2005"
                   target="_blank"
                   rel="noopener noreferrer"
                   className="p-4 bg-secondary border border-border hover:border-primary/50 transition-colors"
