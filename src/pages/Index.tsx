@@ -1,6 +1,6 @@
 import { ArrowRight, Download } from 'lucide-react';
 import { Link } from 'react-router-dom';
-import profileImage from '@/assets/profile.jpg';
+import profileImage from '@/assets/home-profile.jpeg';
 
 const Index = () => {
   return (
