@@ -12,7 +12,9 @@ const Contact = () => {
 
   const handleSubmit = (e: React.FormEvent) => {
     e.preventDefault();
-    toast.success("Message sent successfully! I will get back to you soon.");
+    const mailtoLink = `mailto:rohitpnair7@gmail.com?subject=${encodeURIComponent(formData.subject)}&body=${encodeURIComponent(`Name: ${formData.name}\nEmail: ${formData.email}\n\nMessage:\n${formData.message}`)}`;
+    window.location.href = mailtoLink;
+    toast.success("Opening your email client...");
     setFormData({ name: "", email: "", subject: "", message: "" });
   };
 
